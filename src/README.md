@@ -49,3 +49,16 @@ The application uses a simple data model with meaningful identifiers:
    - Grade level
 
 All data is stored in memory, which means data will be reset when the server restarts.
+
+## Testing
+
+From the repository root, install the project dependencies and run the backend
+test suite:
+
+```sh
+pip install -r requirements.txt
+pytest -v
+```
+
+The tests use the Arrange-Act-Assert pattern and restore the in-memory activity
+data between test cases.
